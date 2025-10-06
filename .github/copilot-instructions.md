@@ -10,6 +10,7 @@ This is a modern Next.js 15 project using the App Router architecture with TypeS
 - Root layout in `src/app/layout.tsx` handles global HTML structure and font loading
 - Main page component in `src/app/page.tsx`
 - TypeScript path mapping: `@/*` resolves to `./src/*`
+- Use indonesian language support for default language, and english as secondary language, and use `next-intl` for localization
 
 ### Styling System
 - **Tailwind CSS v4** with inline theme configuration in `globals.css`
