@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# eMILKOI
 
-## Getting Started
+> eMILKOI adalah aplikasi web modern yang dibangun menggunakan teknologi terdepan untuk memberikan pengalaman pengguna yang lebih optimal.
 
-First, run the development server:
+> [!NOTE]
+> Aplikasi ini belum sepenuhnya aman dan bekerja sebagaimana mestinya, maka dari itu saai ini kami tidak menyarankan untuk melakukan deployment untuk production.
 
+[🇺🇸 English Version](./README.en.md)
+
+## Daftar Isi
+
+- [Persyaratan](#persyaratan)
+- [Instalasi](#instalasi)
+- [Penggunaan](#penggunaan)
+- [Kontribusi](#kontribusi)
+- [Lisensi](#lisensi)
+
+## Persyaratan
+
+- [Node.js](https://nodejs.org) v22+ atau lebih tinggi.
+
+## Instalasi
+
+1. **Clone repository:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/GTPSHAX/eMILKOI.git
+cd eMILKOI
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies:**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Jalankan development server:**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Buka browser:**
+Kunjungi [http://localhost:3000](http://localhost:3000) untuk melihat aplikasi.
 
-## Learn More
+## Penggunaan
 
-To learn more about Next.js, take a look at the following resources:
+### Development Commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Jalankan development server dengan Turbopack
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Build untuk production
+npm run build
 
-## Deploy on Vercel
+# Jalankan production server
+npm run start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Lint kode
+npm run lint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Auto-fix lint issues
+npm run lint:fix
+```
+
+### Project Structure
+
+```
+src/
+├── app/                 # App Router directory
+│   ├── globals.css     # Global styles dengan Tailwind
+│   ├── layout.tsx      # Root layout dengan font loading
+│   ├── page.tsx        # Homepage component
+│   └── favicon.ico     # App icon
+├── lib/                # Utility functions
+│   └── utils.ts        # Helper utilities
+public/                 # Static assets
+components.json         # shadcn/ui configuration
+```
+
+## Kontribusi
+
+Kami sangat menghargai segala kontribusi dari kamu, jika kamu tertarik untuk berkontribusi, silahkan:
+
+1. Fork repository ini
+2. Buat branch untuk fitur/perbaikan Anda
+3. Commit perubahan dengan pesan yang jelas
+4. Push ke branch Anda (Sebelum melakukan push pastikan sudah menjalankan `npm run lint` atau `npm run lint:fix`)
+5. Buat Pull Request
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
