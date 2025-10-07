@@ -1,27 +1,27 @@
 # eMILKOI
 
-> eMILKOI adalah aplikasi web modern yang dibangun menggunakan teknologi terdepan untuk memberikan pengalaman pengguna yang lebih optimal.
+> eMILKOI is a modern voting web application built with Next.js 15, TypeScript, and Tailwind CSS v4. Designed for seamless user experience with internationalization support (Indonesian/English), it provides a secure and intuitive platform for digital voting processes.
 
 > [!NOTE]
-> Aplikasi ini belum sepenuhnya aman dan bekerja sebagaimana mestinya, maka dari itu saai ini kami tidak menyarankan untuk melakukan deployment untuk production.
+> This application is not yet fully secure and working as it should, so we currently do not recommend deploying it for production.
 
-[🇺🇸 English Version](./README.en.md)
+[🇮🇩 Versi Indonesia](./README.md)
 
-## Daftar Isi
+## Table of Contents
 
-- [Persyaratan](#persyaratan)
-- [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Persyaratan
+## Requirements
 
-- [Node.js](https://nodejs.org) v22+ atau lebih tinggi.
+- [Node.js](https://nodejs.org) v22+ or higher.
 
-## Instalasi
+## Installation
 
-1. **Clone repository:**
+1. **Clone the repository:**
 ```bash
 git clone https://github.com/GTPSHAX/eMILKOI.git
 cd eMILKOI
@@ -32,29 +32,29 @@ cd eMILKOI
 npm install
 ```
 
-3. **Jalankan development server:**
+3. **Run the development server:**
 ```bash
 npm run dev
 ```
 
-4. **Buka browser:**
-Kunjungi [http://localhost:3000](http://localhost:3000) untuk melihat aplikasi.
+4. **Open your browser:**
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
-## Penggunaan
+## Usage
 
 ### Development Commands
 
 ```bash
-# Jalankan development server dengan Turbopack
+# Run development server with Turbopack
 npm run dev
 
-# Build untuk production
+# Build for production
 npm run build
 
-# Jalankan production server
+# Run production server
 npm run start
 
-# Lint kode
+# Lint code
 npm run lint
 
 # Auto-fix lint issues
@@ -65,27 +65,32 @@ npm run lint:fix
 
 ```
 src/
-├── app/                 # App Router directory
-│   ├── globals.css     # Global styles dengan Tailwind
-│   ├── layout.tsx      # Root layout dengan font loading
-│   ├── page.tsx        # Homepage component
-│   └── favicon.ico     # App icon
-├── lib/                # Utility functions
-│   └── utils.ts        # Helper utilities
-public/                 # Static assets
-components.json         # shadcn/ui configuration
+├── app/
+│   ├── [lang]/
+│   │   ├── layout.tsx     # Language-specific layout with metadata
+│   │   └── page.tsx       # Main page with i18n support
+│   ├── layout.tsx         # Root layout with theme provider
+│   └── page.tsx           # Root redirect to default language
+├── lib/
+│   └── dictionaries/
+│       ├── index.ts       # Dictionary loader functions
+│       ├── id.json        # Indonesian translations
+│       └── en.json        # English translations
+├── components/
+│   └── language-switcher.tsx # Language toggle component
+└── middleware.ts          # URL rewriting and locale detection
 ```
 
-## Kontribusi
+## Contributing
 
-Kami sangat menghargai segala kontribusi dari kamu, jika kamu tertarik untuk berkontribusi, silahkan:
+We greatly appreciate all contributions from you. If you are interested in contributing, please:
 
-1. Fork repository ini
-2. Buat branch untuk fitur/perbaikan Anda
-3. Commit perubahan dengan pesan yang jelas
-4. Push ke branch Anda (Sebelum melakukan push pastikan sudah menjalankan `npm run lint` atau `npm run lint:fix`)
-5. Buat Pull Request
+1. Fork this repository
+2. Create a branch for your feature/fix
+3. Commit changes with clear messages
+4. Push to your branch (Before pushing, make sure you have run `npm run lint` or `npm run lint:fix`)
+5. Create a Pull Request
 
-## Lisensi
+## License
 
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).

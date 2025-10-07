@@ -1,0 +1,117 @@
+{
+  "page": {
+    "meta": {
+      "title": "Home",
+      "description": "Home page of the application."
+    },
+    "home": {
+      "hero": {
+        "badge": "Trusted Digital Voting Platform",
+        "title": "Online Voting",
+        "subtitle": "Easy, Secure, and Transparent",
+        "description": "A digital voting platform that makes it easy to create and manage online elections with high-level security and accurate real-time results.",
+        "buttons": {
+          "getStarted": "Create Vote",
+          "learnMore": "View Repository"
+        },
+        "features": {
+          "fast": "Real-time Results",
+          "beautiful": "Beautiful Design",
+          "typeSafe": "User Friendly"
+        }
+      },
+      "features": {
+        "title": "Powerful Features",
+        "subtitle": "Modern voting system with full security and transparency",
+        "items": {
+          "performance": {
+            "title": "Fast Performance",
+            "description": "Lightning-fast performance with optimized rendering and efficient state management for seamless user experience."
+          },
+          "design": {
+            "title": "Beautiful Design",
+            "description": "Modern and elegant design with carefully crafted components and smooth animations for delightful interactions."
+          },
+          "typeSafe": {
+            "title": "User Friendly",
+            "description": "Simple and intuitive interface, designed so anyone can use it immediately without special training."
+          },
+          "realtime": {
+            "title": "Real-time Updates",
+            "description": "Live voting results with real-time synchronization across all devices for transparent and fair elections."
+          },
+          "security": {
+            "title": "Secure & Private",
+            "description": "Enterprise-grade security with encrypted data transmission and privacy-focused architecture."
+          },
+          "integration": {
+            "title": "Easy Integration",
+            "description": "Simple setup and deployment with comprehensive documentation and support for various platforms."
+          }
+        },
+        "cta": {
+          "getStarted": "Get Started Now",
+          "viewDocs": "View Documentation"
+        }
+      },
+      "howItWorks": {
+        "badge": "Simple Process",
+        "title": "How It Works",
+        "subtitle": "Just 3 easy steps to start your voting",
+        "steps": {
+          "create": {
+            "title": "Create Voting",
+            "description": "Create voting easily, set candidate options, determine duration, and customize according to your needs."
+          },
+          "share": {
+            "title": "Share Link",
+            "description": "Get a unique link and share it with participants via WhatsApp, email, or other social media."
+          },
+          "monitor": {
+            "title": "Monitor Results",
+            "description": "View voting results in real-time with interactive charts and complete downloadable reports."
+          }
+        }
+      }
+    }
+  },
+  "others": {
+    "changeLanguage": "Change Language",
+    "mode": {
+      "srOnly": "Toggle theme",
+      "light": "Light Mode",
+      "dark": "Dark Mode",
+      "system": "Follow System"
+    }
+  },
+  "footer": {
+    "description": "Modern, secure, and easy-to-use online voting platform for all your election needs.",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "documentation": "Documentation"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "security": "Security"
+    },
+    "bottom": {
+      "rights": "All rights reserved",
+      "sitemap": "Sitemap",
+      "status": "Status",
+      "accessibility": "Accessibility"
+    }
+  }
+}
