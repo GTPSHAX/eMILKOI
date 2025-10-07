@@ -1,0 +1,117 @@
+{
+  "page": {
+    "meta": {
+      "title": "Beranda",
+      "description": "Halaman beranda aplikasi."
+    },
+    "home": {
+      "hero": {
+        "badge": "Platform Voting Digital Terpercaya",
+        "title": "Voting Online",
+        "subtitle": "Mudah, Aman, dan Transparan",
+        "description": "Platform voting digital yang memudahkan Anda untuk membuat dan mengelola pemilihan online dengan sistem keamanan tinggi dan hasil real-time yang akurat.",
+        "buttons": {
+          "getStarted": "Buat Voting",
+          "learnMore": "Lihat Repository"
+        },
+        "features": {
+          "fast": "Hasil Real-time",
+          "beautiful": "Tampilan Menarik",
+          "typeSafe": "Mudah Digunakan"
+        }
+      },
+      "features": {
+        "title": "Fitur Unggulan",
+        "subtitle": "Sistem voting modern dengan keamanan dan transparansi penuh",
+        "items": {
+          "performance": {
+            "title": "Performa Cepat",
+            "description": "Performa sangat cepat dengan rendering yang dioptimalkan dan manajemen state yang efisien untuk pengalaman pengguna yang mulus."
+          },
+          "design": {
+            "title": "Desain Indah",
+            "description": "Desain modern dan elegan dengan komponen yang dibuat dengan hati-hati dan animasi yang halus untuk interaksi yang menyenangkan."
+          },
+          "typeSafe": {
+            "title": "Mudah Digunakan",
+            "description": "Antarmuka yang sederhana dan intuitif, dirancang agar siapa saja bisa langsung menggunakan tanpa perlu pelatihan khusus."
+          },
+          "realtime": {
+            "title": "Update Real-time",
+            "description": "Hasil voting langsung dengan sinkronisasi real-time di semua perangkat untuk pemilihan yang transparan dan adil."
+          },
+          "security": {
+            "title": "Aman & Privat",
+            "description": "Keamanan tingkat enterprise dengan transmisi data terenkripsi dan arsitektur yang fokus pada privasi."
+          },
+          "integration": {
+            "title": "Integrasi Mudah",
+            "description": "Pengaturan dan deployment yang sederhana dengan dokumentasi lengkap dan dukungan untuk berbagai platform."
+          }
+        },
+        "cta": {
+          "getStarted": "Mulai Sekarang",
+          "viewDocs": "Lihat Dokumentasi"
+        }
+      },
+      "howItWorks": {
+        "badge": "Proses Sederhana",
+        "title": "Cara Kerja",
+        "subtitle": "Hanya 3 langkah mudah untuk memulai voting Anda",
+        "steps": {
+          "create": {
+            "title": "Buat Voting",
+            "description": "Buat voting dengan mudah, atur opsi kandidat, tentukan durasi, dan kustomisasi sesuai kebutuhan Anda."
+          },
+          "share": {
+            "title": "Bagikan Link",
+            "description": "Dapatkan link unik dan bagikan ke peserta melalui WhatsApp, email, atau media sosial lainnya."
+          },
+          "monitor": {
+            "title": "Pantau Hasil",
+            "description": "Lihat hasil voting secara real-time dengan grafik interaktif dan laporan lengkap yang dapat diunduh."
+          }
+        }
+      }
+    }
+  },
+  "others": {
+    "changeLanguage": "Ganti Bahasa",
+    "mode": {
+      "srOnly": "Alihkan tema",
+      "light": "Mode Terang",
+      "dark": "Mode Gelap",
+      "system": "Ikuti Sistem"
+    }
+  },
+  "footer": {
+    "description": "Platform voting online modern, aman, dan mudah digunakan untuk berbagai kebutuhan pemilihan Anda.",
+    "product": {
+      "title": "Produk",
+      "features": "Fitur",
+      "howItWorks": "Cara Kerja",
+      "pricing": "Harga",
+      "documentation": "Dokumentasi"
+    },
+    "company": {
+      "title": "Perusahaan",
+      "about": "Tentang Kami",
+      "blog": "Blog",
+      "careers": "Karir",
+      "contact": "Kontak"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Syarat & Ketentuan",
+      "cookies": "Kebijakan Cookie",
+      "security": "Keamanan"
+    },
+    "bottom": {
+      "rights": "Hak Cipta Dilindungi",
+      "sitemap": "Peta Situs",
+      "status": "Status",
+      "accessibility": "Aksesibilitas"
+    }
+  }
+}

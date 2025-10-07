@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# eMILKOI
 
-## Getting Started
+> eMILKOI is a modern voting web application built with Next.js 15, TypeScript, and Tailwind CSS v4. Designed for seamless user experience with internationalization support (Indonesian/English), it provides a secure and intuitive platform for digital voting processes.
 
-First, run the development server:
+> [!NOTE]
+> This application is not yet fully secure and working as it should, so we currently do not recommend deploying it for production.
 
+[🇮🇩 Versi Indonesia](./README.md)
+
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Requirements
+
+- [Node.js](https://nodejs.org) v22+ or higher.
+
+## Installation
+
+1. **Clone the repository:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/GTPSHAX/eMILKOI.git
+cd eMILKOI
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies:**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run the development server:**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Open your browser:**
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+### Development Commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Run development server with Turbopack
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Build for production
+npm run build
 
-## Deploy on Vercel
+# Run production server
+npm run start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Lint code
+npm run lint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Auto-fix lint issues
+npm run lint:fix
+```
+
+### Project Structure
+
+```
+src/
+├── app/
+│   ├── [lang]/
+│   │   ├── layout.tsx     # Language-specific layout with metadata
+│   │   └── page.tsx       # Main page with i18n support
+│   ├── layout.tsx         # Root layout with theme provider
+│   └── page.tsx           # Root redirect to default language
+├── lib/
+│   └── dictionaries/
+│       ├── index.ts       # Dictionary loader functions
+│       ├── id.json        # Indonesian translations
+│       └── en.json        # English translations
+├── components/
+│   └── language-switcher.tsx # Language toggle component
+└── middleware.ts          # URL rewriting and locale detection
+```
+
+## Contributing
+
+We greatly appreciate all contributions from you. If you are interested in contributing, please:
+
+1. Fork this repository
+2. Create a branch for your feature/fix
+3. Commit changes with clear messages
+4. Push to your branch (Before pushing, make sure you have run `npm run lint` or `npm run lint:fix`)
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
