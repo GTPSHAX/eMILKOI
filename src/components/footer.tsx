@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Logo from "./logo";
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
-import type { Locale } from "@/lib/dictionaries";
 
 interface FooterProps {
   dict: {
