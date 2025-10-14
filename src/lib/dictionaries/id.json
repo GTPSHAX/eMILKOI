@@ -8,7 +8,7 @@
       "hero": {
         "badge": "Platform Voting Digital Terpercaya",
         "title": "Voting Online",
-        "subtitle": "Mudah, Aman, dan Transparan",
+        "subtitle": "Modern, Aman, dan Transparan",
         "description": "Platform voting digital yang memudahkan Anda untuk membuat dan mengelola pemilihan online dengan sistem keamanan tinggi dan hasil real-time yang akurat.",
         "buttons": {
           "getStarted": "Buat Voting",
@@ -112,6 +112,194 @@
       "sitemap": "Peta Situs",
       "status": "Status",
       "accessibility": "Aksesibilitas"
+    }
+  },
+  "auth": {
+    "title": "Selamat Datang di eMILKOI",
+    "description": "Login atau daftar untuk melanjutkan",
+    "tabs": {
+      "login": "Masuk",
+      "register": "Daftar"
+    },
+    "login": {
+      "email": "Email",
+      "password": "Kata Sandi",
+      "emailPlaceholder": "admin@example.com",
+      "passwordPlaceholder": "••••••••",
+      "button": "Masuk",
+      "buttonLoading": "Sedang masuk...",
+      "adminCredentials": "Kredensial admin default:",
+      "errorGeneric": "Terjadi kesalahan. Silakan coba lagi."
+    },
+    "register": {
+      "fullName": "Nama Lengkap",
+      "email": "Email",
+      "password": "Kata Sandi",
+      "confirmPassword": "Konfirmasi Kata Sandi",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "passwordPlaceholder": "••••••••",
+      "passwordHint": "Minimal 6 karakter",
+      "button": "Buat Akun",
+      "buttonLoading": "Membuat akun...",
+      "successMessage": "Pendaftaran berhasil! Beralih ke login...",
+      "errorGeneric": "Terjadi kesalahan. Silakan coba lagi."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard Admin",
+    "welcome": "Selamat datang kembali",
+    "logout": "Keluar",
+    "loading": "Memuat...",
+    "stats": {
+      "totalVotes": "Total Suara Masuk",
+      "totalVotesDesc": "Dari semua sesi voting",
+      "activeSessions": "Sesi Aktif",
+      "activeSessionsDesc": "Sedang berjalan saat ini",
+      "pendingSessions": "Sesi Pending",
+      "pendingSessionsDesc": "Menunggu untuk dimulai",
+      "completedSessions": "Sesi Selesai",
+      "completedSessionsDesc": "Sudah selesai",
+      "totalSessions": "Total Sesi Voting",
+      "totalSessionsDesc": "Semua sesi yang dibuat",
+      "quickAction": "Aksi Cepat"
+    },
+    "overview": {
+      "title": "Ringkasan Voting",
+      "description": "Informasi lengkap tentang semua aktivitas voting di platform",
+      "running": "Sesi Berjalan",
+      "runningDesc": "Voting yang sedang aktif",
+      "waiting": "Menunggu Mulai",
+      "waitingDesc": "Sesi yang sudah dijadwalkan",
+      "finished": "Sudah Selesai",
+      "finishedDesc": "Voting yang telah ditutup"
+    },
+    "sessions": {
+      "title": "Daftar Sesi Voting",
+      "description": "Kelola semua sesi voting Anda",
+      "empty": "Belum ada sesi voting",
+      "emptyDesc": "Buat sesi voting pertama Anda untuk memulai",
+      "status": {
+        "pending": "Pending",
+        "active": "Aktif",
+        "completed": "Selesai"
+      },
+      "actions": {
+        "start": "Mulai",
+        "complete": "Selesaikan",
+        "view": "Lihat Detail",
+        "delete": "Hapus"
+      },
+      "viewDetails": {
+        "sessionInfo": "Informasi Sesi",
+        "status": "Status",
+        "startDate": "Mulai",
+        "endDate": "Selesai",
+        "votingUrl": "URL Voting",
+        "copyUrl": "Salin",
+        "urlCopied": "URL disalin!",
+        "candidates": "Kandidat",
+        "options": "Opsi Voting",
+        "noValidCandidates": "Tidak ada kandidat yang valid",
+        "candidateClass": "Kelas:"
+      },
+      "deleteConfirm": {
+        "title": "Konfirmasi Hapus Session",
+        "description": "Apakah Anda yakin ingin menghapus session ini? Semua data voting dan gambar kandidat akan dihapus secara permanen.",
+        "cancel": "Batal",
+        "confirm": "Hapus Session",
+        "deleting": "Menghapus...",
+        "success": "Session berhasil dihapus!",
+        "votesDeleted": "suara dihapus",
+        "imagesDeleted": "gambar dihapus"
+      }
+    },
+    "createSession": {
+      "button": "Buat Sesi Voting Baru",
+      "title": "Buat Sesi Voting Baru",
+      "description": "Isi form di bawah untuk membuat sesi voting baru",
+      "form": {
+        "title": "Judul Voting",
+        "titlePlaceholder": "Pemilihan Ketua OSIS 2024",
+        "description": "Deskripsi",
+        "descriptionPlaceholder": "Pemilihan ketua OSIS untuk periode 2024-2025",
+        "slug": "URL Khusus",
+        "slugPlaceholder": "pemilihan-ketua-osis-2024",
+        "slugHint": "URL akan menjadi: /vote/[slug]",
+        "startDate": "Tanggal Mulai",
+        "endDate": "Tanggal Selesai",
+        "candidates": "Kandidat",
+        "candidateName": "Nama Kandidat",
+        "candidateNamePlaceholder": "John Doe",
+        "candidateClass": "Kelas",
+        "candidateClassPlaceholder": "XII IPA 1",
+        "candidateDescription": "Deskripsi Kandidat",
+        "candidateDescriptionPlaceholder": "Visi, misi, dan program kerja kandidat...",
+        "candidatePhoto": "Foto Kandidat",
+        "candidatePhotoHint": "Upload foto (max 5MB, format: JPG, PNG, WEBP)",
+        "addCandidate": "Tambah Kandidat",
+        "removeCandidate": "Hapus",
+        "minCandidates": "Minimal 2 kandidat diperlukan",
+        "options": "Opsi/Kandidat",
+        "optionsPlaceholder": "Nama kandidat atau opsi pilihan",
+        "addOption": "Tambah Opsi",
+        "removeOption": "Hapus",
+        "minOptions": "Minimal 2 opsi diperlukan"
+      },
+      "buttons": {
+        "cancel": "Batal",
+        "create": "Buat Sesi",
+        "creating": "Membuat..."
+      },
+      "success": "Sesi voting berhasil dibuat!",
+      "error": "Gagal membuat sesi voting"
+    },
+    "imageCropper": {
+      "title": "Crop Gambar",
+      "zoom": "Zoom",
+      "cancel": "Batal",
+      "crop": "Crop & Upload",
+      "cropping": "Cropping..."
+    }
+  },
+  "voting": {
+    "title": "Halaman Voting",
+    "loading": "Memuat...",
+    "notFound": "Sesi voting tidak ditemukan",
+    "notActive": "Voting tidak aktif",
+    "ended": "Voting telah berakhir",
+    "notStarted": "Voting belum dimulai",
+    "form": {
+      "name": "Nama Lengkap",
+      "namePlaceholder": "Masukkan nama lengkap Anda",
+      "email": "Email",
+      "emailPlaceholder": "alamat@email.com",
+      "selectCandidate": "Pilih Kandidat",
+      "selectOption": "Pilih Opsi",
+      "required": "Wajib diisi",
+      "invalidEmail": "Email tidak valid",
+      "submitVote": "Kirim Suara",
+      "submitting": "Mengirim..."
+    },
+    "success": {
+      "title": "Terima Kasih!",
+      "message": "Suara Anda telah berhasil dikirim",
+      "redirecting": "Siap untuk pemilih berikutnya dalam {seconds} detik..."
+    },
+    "error": {
+      "alreadyVoted": "Anda sudah melakukan voting",
+      "invalidSelection": "Pilihan tidak valid",
+      "submitFailed": "Gagal mengirim suara",
+      "tryAgain": "Coba Lagi"
+    },
+    "navigation": {
+      "back": "Kembali",
+      "next": "Lanjut",
+      "home": "Beranda"
+    },
+    "candidate": {
+      "class": "Kelas:",
+      "description": "Deskripsi:"
     }
   }
 }

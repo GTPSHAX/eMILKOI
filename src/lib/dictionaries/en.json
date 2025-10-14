@@ -113,5 +113,193 @@
       "status": "Status",
       "accessibility": "Accessibility"
     }
+  },
+  "auth": {
+    "title": "Welcome to eMILKOI",
+    "description": "Login or register to continue",
+    "tabs": {
+      "login": "Login",
+      "register": "Register"
+    },
+    "login": {
+      "email": "Email",
+      "password": "Password",
+      "emailPlaceholder": "admin@example.com",
+      "passwordPlaceholder": "••••••••",
+      "button": "Login",
+      "buttonLoading": "Logging in...",
+      "adminCredentials": "Default admin credentials:",
+      "errorGeneric": "An error occurred. Please try again."
+    },
+    "register": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "passwordPlaceholder": "••••••••",
+      "passwordHint": "Minimum 6 characters",
+      "button": "Create Account",
+      "buttonLoading": "Creating Account...",
+      "successMessage": "Registration successful! Switching to login...",
+      "errorGeneric": "An error occurred. Please try again."
+    }
+  },
+  "dashboard": {
+    "title": "Admin Dashboard",
+    "welcome": "Welcome back",
+    "logout": "Logout",
+    "loading": "Loading...",
+    "stats": {
+      "totalVotes": "Total Votes",
+      "totalVotesDesc": "From all voting sessions",
+      "activeSessions": "Active Sessions",
+      "activeSessionsDesc": "Currently running",
+      "pendingSessions": "Pending Sessions",
+      "pendingSessionsDesc": "Waiting to start",
+      "completedSessions": "Completed Sessions",
+      "completedSessionsDesc": "Already finished",
+      "totalSessions": "Total Voting Sessions",
+      "totalSessionsDesc": "All sessions created",
+      "quickAction": "Quick Action"
+    },
+    "overview": {
+      "title": "Voting Overview",
+      "description": "Complete information about all voting activities on the platform",
+      "running": "Running Sessions",
+      "runningDesc": "Active voting sessions",
+      "waiting": "Waiting to Start",
+      "waitingDesc": "Scheduled sessions",
+      "finished": "Already Finished",
+      "finishedDesc": "Closed voting sessions"
+    },
+    "sessions": {
+      "title": "Voting Sessions List",
+      "description": "Manage all your voting sessions",
+      "empty": "No voting sessions yet",
+      "emptyDesc": "Create your first voting session to get started",
+      "status": {
+        "pending": "Pending",
+        "active": "Active",
+        "completed": "Completed"
+      },
+      "actions": {
+        "start": "Start",
+        "complete": "Complete",
+        "view": "View Details",
+        "delete": "Delete"
+      },
+      "viewDetails": {
+        "sessionInfo": "Session Info",
+        "status": "Status",
+        "startDate": "Start",
+        "endDate": "End",
+        "votingUrl": "Voting URL",
+        "copyUrl": "Copy",
+        "urlCopied": "URL copied!",
+        "candidates": "Candidates",
+        "options": "Voting Options",
+        "noValidCandidates": "No valid candidates found",
+        "candidateClass": "Class:"
+      },
+      "deleteConfirm": {
+        "title": "Confirm Delete Session",
+        "description": "Are you sure you want to delete this session? All voting data and candidate images will be permanently deleted.",
+        "cancel": "Cancel",
+        "confirm": "Delete Session",
+        "deleting": "Deleting...",
+        "success": "Session deleted successfully!",
+        "votesDeleted": "votes deleted",
+        "imagesDeleted": "images deleted"
+      }
+    },
+    "createSession": {
+      "button": "Create New Voting Session",
+      "title": "Create New Voting Session",
+      "description": "Fill in the form below to create a new voting session",
+      "form": {
+        "title": "Voting Title",
+        "titlePlaceholder": "Student Council Election 2024",
+        "description": "Description",
+        "descriptionPlaceholder": "Student council election for the 2024-2025 period",
+        "slug": "Custom URL",
+        "slugPlaceholder": "student-council-election-2024",
+        "slugHint": "URL will be: /vote/[slug]",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "candidates": "Candidates",
+        "candidateName": "Candidate Name",
+        "candidateNamePlaceholder": "John Doe",
+        "candidateClass": "Class",
+        "candidateClassPlaceholder": "Grade 12 Science 1",
+        "candidateDescription": "Candidate Description",
+        "candidateDescriptionPlaceholder": "Vision, mission, and work programs...",
+        "candidatePhoto": "Candidate Photo",
+        "candidatePhotoHint": "Upload photo (max 5MB, format: JPG, PNG, WEBP)",
+        "addCandidate": "Add Candidate",
+        "removeCandidate": "Remove",
+        "minCandidates": "Minimum 2 candidates required",
+        "options": "Options/Candidates",
+        "optionsPlaceholder": "Candidate name or choice option",
+        "addOption": "Add Option",
+        "removeOption": "Remove",
+        "minOptions": "Minimum 2 options required"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "create": "Create Session",
+        "creating": "Creating..."
+      },
+      "success": "Voting session created successfully!",
+      "error": "Failed to create voting session"
+    },
+    "imageCropper": {
+      "title": "Crop Image",
+      "zoom": "Zoom",
+      "cancel": "Cancel",
+      "crop": "Crop & Upload",
+      "cropping": "Cropping..."
+    }
+  },
+  "voting": {
+    "title": "Voting Page",
+    "loading": "Loading...",
+    "notFound": "Voting session not found",
+    "notActive": "Voting is not active",
+    "ended": "Voting has ended",
+    "notStarted": "Voting has not started",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com",
+      "selectCandidate": "Select Candidate",
+      "selectOption": "Select Option",
+      "required": "Required",
+      "invalidEmail": "Invalid email",
+      "submitVote": "Submit Vote",
+      "submitting": "Submitting..."
+    },
+    "success": {
+      "title": "Thank You!",
+      "message": "Your vote has been submitted successfully",
+      "redirecting": "Ready for next voter in {seconds} seconds..."
+    },
+    "error": {
+      "alreadyVoted": "You have already voted",
+      "invalidSelection": "Invalid selection",
+      "submitFailed": "Failed to submit vote",
+      "tryAgain": "Try Again"
+    },
+    "navigation": {
+      "back": "Back",
+      "next": "Next",
+      "home": "Home"
+    },
+    "candidate": {
+      "class": "Class:",
+      "description": "Description:"
+    }
   }
 }

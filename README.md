@@ -42,6 +42,21 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
 ## Usage
 
+### Admin Dashboard
+1. **Login**: Visit `/login` with admin credentials
+2. **Create Session**: Set up voting sessions with custom URLs
+3. **Manage Voting**: Start, stop, and monitor voting sessions
+4. **View Results**: Real-time voting statistics and analytics
+
+### Public Voting (No Authentication)
+1. **Access Voting**: Go to `/vote/[session-slug]` 
+2. **Direct Selection**: Choose candidate immediately (no forms)
+3. **Single Device**: Optimized for kiosk/station voting
+4. **Audio Feedback**: Maximum volume success sound after voting
+5. **Auto-Reset**: Ready for next voter after 15 seconds
+
+For detailed voting system documentation, see [PUBLIC_VOTING_SYSTEM.md](./PUBLIC_VOTING_SYSTEM.md).
+
 ### Development Commands
 
 ```bash
@@ -67,18 +82,37 @@ npm run lint:fix
 src/
 ├── app/
 │   ├── [lang]/
-│   │   ├── layout.tsx     # Language-specific layout with metadata
-│   │   └── page.tsx       # Main page with i18n support
-│   ├── layout.tsx         # Root layout with theme provider
-│   └── page.tsx           # Root redirect to default language
-├── lib/
-│   └── dictionaries/
-│       ├── index.ts       # Dictionary loader functions
-│       ├── id.json        # Indonesian translations
-│       └── en.json        # English translations
+│   │   ├── vote/[slug]/
+│   │   │   └── page.tsx       # Public voting page (no auth)
+│   │   ├── dashboard/
+│   │   │   └── page.tsx       # Admin dashboard
+│   │   ├── login/
+│   │   │   └── page.tsx       # Admin login
+│   │   ├── layout.tsx         # Language-specific layout
+│   │   └── page.tsx           # Main page with i18n
+│   ├── api/
+│   │   ├── vote/[slug]/
+│   │   │   └── route.ts       # Public voting API
+│   │   ├── voting/sessions/
+│   │   │   └── route.ts       # Admin session management
+│   │   └── auth/
+│   │       └── */route.ts     # Authentication APIs
+│   ├── layout.tsx             # Root layout with theme provider
+│   └── page.tsx               # Root redirect to default language
 ├── components/
-│   └── language-switcher.tsx # Language toggle component
-└── middleware.ts          # URL rewriting and locale detection
+│   ├── voting-client.tsx      # Public voting interface
+│   ├── dashboard-client.tsx   # Admin dashboard
+│   └── language-switcher.tsx  # Language toggle component
+├── database/
+│   ├── schema/                # Database table definitions
+│   └── handler/               # CRUD operations
+├── lib/
+│   ├── dictionaries/
+│   │   ├── index.ts           # Dictionary loader functions
+│   │   ├── id.json            # Indonesian translations
+│   │   └── en.json            # English translations
+│   └── session.ts             # Session management
+└── middleware.ts              # URL rewriting and locale detection
 ```
 
 ## Contributing

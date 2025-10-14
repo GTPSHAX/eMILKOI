@@ -2,6 +2,12 @@ import Link from "next/link";
 import Logo from "./logo";
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
+const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "eMILKOI";
+const REPOSITORY_URL = process.env.NEXT_PUBLIC_REPOSITORY_URL || "";
+const TWITTER_URL = process.env.NEXT_PUBLIC_TWITTER_URL || "";
+const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL || "";
+const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "";
+
 interface FooterProps {
   dict: {
     footer: {
@@ -52,40 +58,48 @@ export default function Footer({ dict }: FooterProps) {
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
-              <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
-              >
-                <Github className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-              <Link
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
-              >
-                <Twitter className="h-4 w-4" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
-              >
-                <Linkedin className="h-4 w-4" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link
-                href="mailto:contact@example.com"
-                className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
-              >
-                <Mail className="h-4 w-4" />
-                <span className="sr-only">Email</span>
-              </Link>
+              {REPOSITORY_URL && (
+                <Link
+                  href={REPOSITORY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
+                >
+                  <Github className="h-4 w-4" />
+                  <span className="sr-only">GitHub</span>
+                </Link>
+              )}
+              {TWITTER_URL && (
+                <Link
+                  href={TWITTER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
+                >
+                  <Twitter className="h-4 w-4" />
+                  <span className="sr-only">Twitter</span>
+                </Link>
+              )}
+              {LINKEDIN_URL && (
+                <Link
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  <span className="sr-only">LinkedIn</span>
+                </Link>
+              )}
+              {EMAIL && (
+                <Link
+                  href={`mailto:${EMAIL}`}
+                  className="w-9 h-9 rounded-lg bg-background border border-border hover:border-primary/50 flex items-center justify-center transition-colors"
+                >
+                  <Mail className="h-4 w-4" />
+                  <span className="sr-only">Email</span>
+                </Link>
+              )}
             </div>
           </div>
 
@@ -211,7 +225,7 @@ export default function Footer({ dict }: FooterProps) {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} eMILKOI. {dict.footer.bottom.rights}.
+              &copy; {currentYear} {APP_NAME}. {dict.footer.bottom.rights}.
             </p>
             <div className="flex gap-6">
               <Link

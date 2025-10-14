@@ -86,13 +86,13 @@ export default async function Home({ params }: PageProps) {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-chart-2/10 to-chart-5/10 animate-gradient-shift" />
           
           {/* Grid Pattern Overlay */}
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--foreground-rgb,0,0,0),0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--foreground-rgb,0,0,0),0.05)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.05)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
 
           {/* Floating Orbs */}
           <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-chart-5/20 rounded-full blur-3xl animate-float-delayed" />
 
-          <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-32 pb-0">
+          <div className="relative mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-32 pb-0">
             <div className="flex flex-col items-center text-center space-y-8 max-w-5xl mx-auto">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm animate-fade-in-up">
@@ -108,7 +108,7 @@ export default async function Home({ params }: PageProps) {
               {/* Main Heading with Gradient */}
               <div className="space-y-4 animate-fade-in-up animation-delay-200">
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight">
-                  <span className="block bg-gradient-to-r from-chart-2 via-primary to-chart-5 bg-clip-text text-transparent">
+                  <span className="block bg-gradient-to-r from-chart-2 via-green-300 to-chart-5 bg-clip-text text-transparent">
                     {dict.page.home.hero.title}
                   </span>
                   <span className="block mt-2 bg-gradient-to-r from-chart-5 via-chart-2 to-primary bg-clip-text text-transparent">
@@ -128,7 +128,7 @@ export default async function Home({ params }: PageProps) {
                   className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
                   asChild
                 >
-                  <Link href="/dashboard/new" className="flex items-center gap-2">
+                  <Link href="/dashboard" className="flex items-center gap-2">
                     <Code2 className="h-5 w-5 group-hover:rotate-12 transition-transform" />
                     <span className="font-semibold">
                       {dict.page.home.hero.buttons.getStarted}
@@ -140,14 +140,15 @@ export default async function Home({ params }: PageProps) {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="group border-2 hover:bg-accent hover:scale-105 transition-all duration-300"
+                  className="group relative overflow-hidden text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
                   asChild
                 >
                   <Link href="/docs" className="flex items-center gap-2">
-                    <Github className="h-5 w-5 group-hover:rotate-[360deg] text-accent-foreground transition-transform duration-700" />
+                    <Github className="h-5 w-5 group-hover:rotate-12 transition-transform" />
                     <span className="font-semibold">
                       {dict.page.home.hero.buttons.learnMore}
                     </span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-black/20 dark:via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
                   </Link>
                 </Button>
               </div>
@@ -241,7 +242,7 @@ export default async function Home({ params }: PageProps) {
               </div>
 
               {/* Hero Image or Demo Preview - Laptop Mockup */}
-              <div className="relative w-full max-w-5xl mt-12 animate-fade-in-up animation-delay-800">
+              <div className="relative w-full mt-12 animate-fade-in-up animation-delay-800">
                 {/* Laptop Container */}
                 <div className="relative mx-auto" style={{ perspective: "1000px" }}>
                   {/* Laptop Screen */}
@@ -583,7 +584,7 @@ export default async function Home({ params }: PageProps) {
         {/* How It Works Section */}
         <section id="how-it-works" className="py-20 lg:py-32 bg-background relative overflow-hidden">
           {/* Background Decoration */}
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--foreground-rgb,0,0,0),0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--foreground-rgb,0,0,0),0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_60%,transparent_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_60%,transparent_100%)]" />
           
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
             {/* Section Header */}
