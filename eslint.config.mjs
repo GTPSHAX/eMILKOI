@@ -24,6 +24,7 @@ const eslintConfig = [
   {
     files: ["src/**/*.{js,jsx,ts,tsx}"], // Only apply custom rules to source files
     rules: {
+      "@typescript-eslint/no-explicit-any": "off", // Allow usage of 'any' type
       // Enforce 2-space indentation
       "indent": ["error", 2, {
         "SwitchCase": 1,

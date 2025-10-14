@@ -129,13 +129,13 @@ export function VotingClient({ sessionData, dict, currentLang }: VotingClientPro
 
     try {
       const response = await fetch(`/api/vote/${sessionData.slug}`, {
-        method: 'POST',
+        method : 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          candidate: formData.selectedCandidate,
-          voterName: 'Anonymous', // Fixed name since no input
+          candidate : formData.selectedCandidate,
+          voterName : 'Anonymous', // Fixed name since no input
           voterEmail: `anonymous-${Date.now()}@voting.local`, // Generate unique email
         }),
       })

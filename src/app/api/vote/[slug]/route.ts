@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { getVotingSessionBySlug, createVote, hasEmailVoted } from '@/database/handler/voting'
+import { getVotingSessionBySlug, createVote } from '@/database/handler/voting'
 
 // GET - Get voting session by slug (public access)
 export async function GET(
@@ -35,15 +35,15 @@ export async function GET(
 
     return NextResponse.json({
       success: true,
-      data: {
-        id: session.id,
-        title: session.title,
+      data   : {
+        id         : session.id,
+        title      : session.title,
         description: session.description,
-        slug: session.slug,
-        candidates: session.candidates,
-        options: session.options,
-        startDate: session.startDate,
-        endDate: session.endDate,
+        slug       : session.slug,
+        candidates : session.candidates,
+        options    : session.options,
+        startDate  : session.startDate,
+        endDate    : session.endDate,
       },
     })
   } catch (error) {
@@ -118,12 +118,12 @@ export async function POST(
       candidate,
       voterName,
       voterEmail,
-      userId: null, // No user authentication required
+      userId   : null, // No user authentication required
     })
 
     return NextResponse.json({
       success: true,
-      data: vote,
+      data   : vote,
       message: 'Vote submitted successfully',
     })
   } catch (error) {

@@ -89,7 +89,7 @@ export async function DELETE(request: Request, { params }: Params) {
     const voteCount = sessionVotes.length
 
     // Clean up candidate images if they exist
-    let deletedImages: string[] = []
+    const deletedImages: string[] = []
     if (sessionData.candidates) {
       try {
         const candidates = JSON.parse(sessionData.candidates)
@@ -124,10 +124,10 @@ export async function DELETE(request: Request, { params }: Params) {
     return NextResponse.json({
       success: true,
       message: 'Voting session deleted successfully',
-      data: {
+      data   : {
         deletedSessionId: sessionId,
-        deletedVotes: voteCount,
-        deletedImages: deletedImages,
+        deletedVotes    : voteCount,
+        deletedImages   : deletedImages,
       }
     })
   } catch (error) {

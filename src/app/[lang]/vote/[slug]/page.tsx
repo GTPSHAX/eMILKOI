@@ -41,7 +41,7 @@ export default async function VotingPage({ params }: VotingPageProps) {
 }
 
 export async function generateMetadata({ params }: VotingPageProps) {
-  const { lang, slug } = await params
+  const { slug } = await params
   
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/vote/${slug}`, {
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: VotingPageProps) {
       const result = await response.json()
       if (result.success) {
         return {
-          title: `${result.data.title} - eMILKOI Voting`,
+          title      : `${result.data.title} - eMILKOI Voting`,
           description: result.data.description,
         }
       }
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: VotingPageProps) {
   }
 
   return {
-    title: 'Voting - eMILKOI',
+    title      : 'Voting - eMILKOI',
     description: 'Online voting platform',
   }
 }
